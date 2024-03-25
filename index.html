@@ -209,27 +209,37 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">What Matters in "LLM for Embodied Control" toward general purpose applications</h2>
+          <!-- <h2 class="title is-3">What Matters in "LLM for Embodied Control" toward general purpose applications</h2> -->
+          <h2 class="title is-3">LLM is good at understanding high-level concept. <b>But, what about low-level?</b></h2>
+
           <div class="content has-text-justified">
-            
+
+            <!-- <br> -->
+
             <!-- Our approach achieves the removal of pre-defined skillsets with LLMs in a 
             manner distinct from conventional API-centric LLM approaches. 
             To achieve this, we suggest that we need to give low-level robotics commands 
             semantic meaning to be treated by LLMs. -->
-            LLM is good at understanding high-level concept. <b>But, what about low-level?</b>
-            Traditional methods leave low-level concepts to predefined APIs.
-            In order to cover low-level concepts using LLM, we say
+            <!-- LLM is good at understanding high-level concept. <b>But, what about low-level?</b> -->
+            For example, it is not possible to directly output
+            how much to turn a robot's motor or how to move a Minecraft agent's body.
+            Therefore everything happens in task-level planning in conventional approach, still high-level.
+            Then current LLM-based agent studies focus on "Feedback", "Memory" and so on.
+            <b>These studies look similar,,,, can we do new things?</b>
+            <!-- Traditional methods leave low-level concepts to predefined APIs. -->
+            In order to cover low-level concepts using LLM, we propose
             it is important to <b>give meaning to low-level concepts in natural language</b>.
-            Our approach achieves the removal of pre-defined skill sets with LLMs in a manner distinct from 
-            conventional API-centric LLM approaches by making everything explicit.
-             <!-- To achieve this, we suggest the necessity of providing 
+            Our approach achieves the removal of pre-defined skill sets with LLMs in a manner distinct from
+            conventional API-centric LLM approaches by making everything explicit in natural language.
+            <!-- To achieve this, we suggest the necessity of providing 
             semantic concepts for low-level robotics commands to be processed by LLMs. -->
 
             <br>
             <br>
+            <br>
 
             <div>
-              <img src="static/images/Mapping.png" alt="drawing" width="700" />
+              <img src="static/images/Mapping.png" alt="drawing" />
 
             </div>
 
