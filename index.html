@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+
+  <meta name="description" content="
+      We utilize natural language to articulate robotics policy, 
+      focusing on advanced and unprecedented efficient embodied control, 
+      rather than relying on code.">
+
+  <meta property="og:title"
+    content="Natural Language as Polices(NLaP): Reasoning for Coordinate-Level Embodied Control with LLMs" />
+
+  <meta property="og:description" content="Our approach achives removing pred-defined APIs such as CLIP,
+            and offers flexible and complex reasoning for 
+            embodied control with only natural language with LLMs." />
+
+  <meta property="og:url" content="https://shure-dev.github.io/" />
+
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/overview.jpg" />
+
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title"
+    content="Natural Language as Polices: Reasoning for Coordinate-Level Embodied Control with LLMs">
+  <meta name="twitter:description" content="
+        We utilize natural language to articulate robotics policy, 
+        focusing on advanced and unprecedented efficient embodied control, 
+        rather than relying on code.">
+
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/overview.jpg">
+  <meta name="twitter:card" content="static/images/overview.jpg">
+  <!-- Keywords for your paper to be indexed by-->
+
+  <meta name="keywords" content="NLaP: Natural Language as Polices: Reasoning for Coordinate-Level 
+            Embodied Control with LLMs
+            Arxiv, Yusuke Mikami, Robot, LLM, ChatGPT, OpenAI, Reasoning, 
+            Chain of Thought, IROS, 2024, Policy, Agent, Reinforcement Learning, 
+            Robotics, Embodied, Large Language Model
+            In-Context Learning, NLP, AGI, AI, Github, Code as Policies, 
+            CaP, Progprompt, Text2Motion, Zero-shot, Instruct2Act, EmbodiedGPT, 
+            RoboGPT, Inner Monologue, Socratic Models, Statler, Demo2Code, 
+            GPT-4V(ision) for Robotics, Tree-Planner, Survey, Prompt, VLM,
+            CoT / VLM / Quantization / Grounding / Text2IMG&VID / Prompt / Reasoning / Robot 
+            / Agent / Planning / RL / Feedback / InContextLearning / InstructionTuning / 
+            PEFT / RLHF / RAG / Embodied / VQA / Hallucination / Diffusion / Scaling / ContextWindow / 
+            WorldModel / Memory / ZeroShot / RoPE / Speech, NLaP">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Natural Language as Polices(NLaP): Reasoning for Coordinate-Level Embodied Control with LLMs</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+
+            <h1 class="title is-1 publication-title">
+              Natural Language as Polices:
+              <!-- Reasoning for Coordinate-Level
+              Embodied Control with LLMs -->
+            </h1>
+
+            <h2 class="title is-2 publication-title">
+              Reasoning for Coordinate-Level
+              Embodied Control with LLMs
+            </h2>
+
+
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/shure-dev" target="_blank">
+                  Yusuke Mikami</a>
+                , Andrew Melnik, Jun Miura, Ville Hautamäki
+                <sup></span>
+            </div>
+
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Preprint. Under review.
+              </span>
+            </div>
+
+            <!-- 
+            <span class="link-block">
+              <a href="https://github.com/shure-dev/NLaP" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </span> -->
+
+
+
+            <div>
+
+              <br>
+
+              <a href="https://arxiv.org/abs/2403.13801"><img alt="Static Badge"
+                  src="https://img.shields.io/badge/arXiv-2403.13801-b31b1b.svg?style=flat"></a>
+
+              <a href="https://arxiv.org/html/2403.13801v1"><img alt="Static Badge"
+                  src="https://img.shields.io/badge/arXiv-HTML-red"></a>
+
+              <a href="https://paperswithcode.com/paper/natural-language-as-polices-reasoning-for">
+                <img alt="Static Badge" src="https://img.shields.io/badge/PaperWithCode-blue">
+              </a>
+
+              <a href="https://github.com/shure-dev/NLaP">
+                <img alt="Static Badge" src="https://img.shields.io/badge/GitHub-NLaP-black"></a>
+
+              <br>
+              <br>
+
+              <iframe width="100%" height="700vh"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9zQ6JLfagDG03OA3g53n5s%2FNLaP%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2%26viewport%3D28%252C382%252C0.07%26t%3DPP8XpRODO5qgZQRQ-1%26scaling%3Dcontain%26mode%3Ddesign"
+                allowfullscreen></iframe>
+
+
+              <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9zQ6JLfagDG03OA3g53n5s%2FNLaP%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2%26viewport%3D28%252C382%252C0.07%26t%3DPP8XpRODO5qgZQRQ-1%26scaling%3Dcontain%26mode%3Ddesign" allowfullscreen></iframe>
+              <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9zQ6JLfagDG03OA3g53n5s%2FNLaP%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D8-7%26viewport%3D28%252C382%252C0.07%26t%3DPP8XpRODO5qgZQRQ-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe> -->
+              <!-- <iframe style="border: 1px solid rgb(255, 255, 255);" 
+              width="900" height="700" 
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9zQ6JLfagDG03OA3g53n5s%2FNLaP%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D8-77%26viewport%3D121%252C330%252C0.29%26t%3D5fds8TNDnkGyWK2m-1%26scaling%3Dcontain%26mode%3Ddesign" allowfullscreen></iframe> -->
+
+
+              <br>
+              <br>
+
+              <div>
+                <img src="https://github.com/shure-dev/NLaP/assets/61527175/20e36052-732c-458b-b665-ae365ad18772"
+                  alt="drawing" width="700" />
+              </div>
+
+              <!-- <div>
+                <img src="static/images/Mapping.png"
+                  alt="drawing" width="700" />
+              </div> -->
+
+            </div>
+
+
+
+            <!-- <span class="link-block">
+                  <a href="https://potent-twister-29f.notion.site/b0fc32542854456cbde923e0adb48845?v=ee8b1facc0cf4bfebd88c36a515430a5&pvs=4" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Notion Table</span>
+
+                </a>
+
+              </span> -->
+            <!-- ArXiv abstract Link -->
+            <!--                 <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">What Matters in "LLM for Embodied Control" toward general purpose applications</h2>
+          <div class="content has-text-justified">
+            
+            <!-- Our approach achieves the removal of pre-defined skillsets with LLMs in a 
+            manner distinct from conventional API-centric LLM approaches. 
+            To achieve this, we suggest that we need to give low-level robotics commands 
+            semantic meaning to be treated by LLMs. -->
+            LLM is good at understanding high-level concept. <b>But, what about low-level?</b>
+            Traditional methods leave low-level concepts to predefined APIs.
+            In order to cover low-level concepts using LLM, we say
+            it is important to <b>give meaning to low-level concepts in natural language</b>.
+            Our approach achieves the removal of pre-defined skill sets with LLMs in a manner distinct from 
+            conventional API-centric LLM approaches by making everything explicit.
+             <!-- To achieve this, we suggest the necessity of providing 
+            semantic concepts for low-level robotics commands to be processed by LLMs. -->
+
+            <br>
+            <br>
+
+            <div>
+              <img src="static/images/Mapping.png" alt="drawing" width="700" />
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <br>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstruct</h2>
+          <div class="content has-text-justified">
+            <p>
+
+              We demonstrate experimental results with LLMs that address
+              robotics action planning problems. Recently, LLMs have been
+              applied in robotics action planning, particularly using a
+              code generation approach that converts complex high-level
+              instructions into mid-level policy codes. In contrast, our
+              approach acquires text descriptions of the task and scene
+              objects, then formulates action planning through natural
+              language reasoning, and outputs coordinate level control
+              commands, thus reducing the necessity for intermediate
+              representation code as policies. Our approach is evaluated on a multi-modal prompt simulation benchmark,
+              demonstrating that our prompt engineering experiments with natural language reasoning significantly
+              enhance success rates compared to its absence. Furthermore, our approach illustrates the potential for
+              natural language descriptions to transfer robotics skills from known tasks to previously unseen tasks.
+
+
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <br>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Specific Reasoning Examples</h2>
+          <div class="content has-text-justified">
+
+
+            Specific example of natural language reasoning we manually made for in-context learning. We do not have any
+            specific format to produce these reasonings and we try to make natural reasoning in a human way.
+            Target tasks are explained in https://vimalabs.github.io/
+            <div>
+              <img src="static/images/reasoning-1.png" alt="drawing" width="900" />
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <embed src="/static/pdfs/reasoning.pdf" width="800px" height="2100px" /> -->
+
+
+
+</body>
+
+
+
+</html>
