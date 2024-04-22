@@ -84,7 +84,7 @@
           <div class="column has-text-centered">
 
             <h1 class="title is-1 publication-title">
-              Natural Language as policies:
+              Natural Language as Policies:
               <!-- Reasoning for Coordinate-Level
               Embodied Control with LLMs -->
             </h1>
@@ -112,7 +112,7 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://www.linkedin.com/in/yusukemikami/" target="_blank">Yusuke Mikami</a><sup>1,2</sup>,</span>
+                <a href="https://sites.google.com/view/yusukemikami/home" target="_blank">Yusuke Mikami</a><sup>1,2</sup>,</span>
                 <span class="author-block">
                   <a href="https://scholar.google.co.jp/citations?user=6tiiQtgAAAAJ&hl=ja&oi=sra" target="_blank">Andrew Melnik</a><sup>3</sup>,</span>
                   <span class="author-block">
@@ -217,7 +217,7 @@
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9zQ6JLfagDG03OA3g53n5s%2FNLaP%3Fpage-id%3D893%253A60%26type%3Ddesign%26node-id%3D893-344%26viewport%3D670%252C1339%252C0.4%26t%3DehrkE3WEd7UmW471-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D893%253A335%26mode%3Ddesign"
                 allowfullscreen></iframe> -->
 
-                <iframe width="110%" height="800vh" 
+                <iframe width="110%" height="850vh" 
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9zQ6JLfagDG03OA3g53n5s%2FNLaP%3Fpage-id%3D893%253A60%26type%3Ddesign%26node-id%3D893-344%26viewport%3D670%252C1339%252C0.4%26t%3DehrkE3WEd7UmW471-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D893%253A335%26mode%3Ddesign"
                 allowfullscreen scrolling="no"></iframe>
             <style>
@@ -237,13 +237,13 @@
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9zQ6JLfagDG03OA3g53n5s%2FNLaP%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D8-77%26viewport%3D121%252C330%252C0.29%26t%3D5fds8TNDnkGyWK2m-1%26scaling%3Dcontain%26mode%3Ddesign" allowfullscreen></iframe> -->
 
 
-              <br>
+              <!-- <br>
               <br>
 
               <div>
                 <img src="static/images/overview.png" 
                   alt="drawddding" width="600"/>
-              </div>
+              </div> -->
 
               <!-- <div>
                 <img src="static/images/Mapping.png"
@@ -327,7 +327,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Problems to be solved in this work</h2>
+          <h2 class="title is-3">Problems of conventional approaches</h2>
           <div class="content has-text-justified">
             <p>
 
@@ -337,6 +337,10 @@
               Third, LLM output actions are policy codes with high-level pre-defined APIs, that is task-level, and prevent flexible planning in various environments.
               We hypothesize that the natural language description of the whole planning process, instead of code, can contribute to removing the limitations.
 
+              <div>
+                <img src="static/images/problems.png" alt="drawing" width="900" />
+              </div>
+
             </p>
 
           </div>
@@ -344,6 +348,36 @@
       </div>
     </div>
   </section>
+
+  <br>
+  <br>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview of our approach</h2>
+          <div class="content has-text-justified">
+            <p>
+
+              We provide one demonstration as an in-context example, and a planning step employing natural language reasoning instead of conventional code implementation. 
+              We remove the CoT reasoning component in the in-context example for our ablation study to check the importance of natural language reasoning. 
+              We use low-level API(pick-and-place or sweep) to control the robot arm. We present specific examples of natural language reasoning in Table.
+            </p>
+
+          </div>
+          <div>
+            <img src="static/images/overview.png" 
+              alt="drawddding" width="600"/>
+          </div>
+        </div>
+        
+
+
+      </div>
+    </div>
+  </section>
+
 
   <br>
   <br>
@@ -361,8 +395,7 @@
             specific format to produce these reasonings and we try to make natural reasoning in a human way.
             Target tasks are explained in https://vimalabs.github.io/
             <div>
-              <img src="static/images/reasoning-2.png" alt="drawing" width="900" />
-
+              <img src="static/images/reasoning.png" alt="drawing" width="900" />
             </div>
 
           </div>
