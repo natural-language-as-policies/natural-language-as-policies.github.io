@@ -119,7 +119,7 @@
                     <a href="https://scholar.google.com/citations?user=vLWDx4YAAAAJ&hl=en" target="_blank">Jun Miura</a><sup>1</sup>,</span>
                     
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=esQWyTcAAAAJ&hl=ja" target="_blank">Ville Hautamäki</a><sup>3</sup>
+                    <a href="https://scholar.google.com/citations?user=esQWyTcAAAAJ&hl=ja" target="_blank">Ville Hautamäki</a><sup>2</sup>
                   </span>
 
                   </div>
@@ -211,10 +211,21 @@
 
               <br>
               <br> -->
-
-              <iframe width="110%" height="800vh"
+              <br>
+              <br>
+              <!-- <iframe width="110%" height="800vh" scrolling="no"
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9zQ6JLfagDG03OA3g53n5s%2FNLaP%3Fpage-id%3D893%253A60%26type%3Ddesign%26node-id%3D893-344%26viewport%3D670%252C1339%252C0.4%26t%3DehrkE3WEd7UmW471-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D893%253A335%26mode%3Ddesign"
-                allowfullscreen></iframe>
+                allowfullscreen></iframe> -->
+
+                <iframe width="110%" height="800vh" 
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9zQ6JLfagDG03OA3g53n5s%2FNLaP%3Fpage-id%3D893%253A60%26type%3Ddesign%26node-id%3D893-344%26viewport%3D670%252C1339%252C0.4%26t%3DehrkE3WEd7UmW471-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D893%253A335%26mode%3Ddesign"
+                allowfullscreen scrolling="no"></iframe>
+            <style>
+                iframe {
+                    pointer-events: none;
+                }
+            </style>
+
 
                 <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9zQ6JLfagDG03OA3g53n5s%2FNLaP%3Fpage-id%3D893%253A60%26type%3Ddesign%26node-id%3D893-344%26viewport%3D670%252C1339%252C0.4%26t%3DehrkE3WEd7UmW471-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D893%253A335%26mode%3Ddesign" allowfullscreen></iframe> -->
 
@@ -230,8 +241,8 @@
               <br>
 
               <div>
-                <img src="/static/images/overview.jpg"
-                  alt="drawing" width="700" />
+                <img src="static/images/overview.png" 
+                  alt="drawddding" width="600"/>
               </div>
 
               <!-- <div>
@@ -311,6 +322,32 @@
 
   <br>
   <br>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Problems to be solved in this work</h2>
+          <div class="content has-text-justified">
+            <p>
+
+              In the recent LLM-based code generation approaches, we suppose there are three primal limitations. 
+              First, code implementation itself lacks high-level contextual meaning to efficiently describe embodied skills since usually it is symbolized, indirectly connected to the scene, and abstracted in the in-context learning process. 
+              Second, these approaches are limited by task-specific pre-defined APIs, such as CLIP. Utilizing high-level APIs in a perception module implies a limitation in flexibility, as it suggests an inability to perform tasks beyond that scope.
+              Third, LLM output actions are policy codes with high-level pre-defined APIs, that is task-level, and prevent flexible planning in various environments.
+              We hypothesize that the natural language description of the whole planning process, instead of code, can contribute to removing the limitations.
+
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <br>
+
 
   <section class="section hero is-light">
     <div class="container is-max-desktop">
