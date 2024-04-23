@@ -228,6 +228,8 @@
             </style>
 
 
+
+
                 <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F9zQ6JLfagDG03OA3g53n5s%2FNLaP%3Fpage-id%3D893%253A60%26type%3Ddesign%26node-id%3D893-344%26viewport%3D670%252C1339%252C0.4%26t%3DehrkE3WEd7UmW471-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D893%253A335%26mode%3Ddesign" allowfullscreen></iframe> -->
 
 
@@ -285,6 +287,91 @@
   </section>
 
 
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <div class="center-image">
+            <img src="static/images/examples/vizual_manipulation.png" alt="MY ALT TEXT" width="500"/>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            Visual manipulation
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <div class="center-image">
+            <img src="static/images/examples/scene.png" alt="MY ALT TEXT" width="500"/>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            Scene understanding
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <div class="center-image">
+            <img src="static/images/examples/old.png" alt="MY ALT TEXT" width="500"/>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            Old neighbor
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <div class="center-image">
+            <img src="static/images/examples/Sweep.png" alt="MY ALT TEXT" width="500"/>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            Sweep without exceeding
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .center-image {
+    display: flex;
+    justify-content: center;
+  }
+</style>
+
+<script>
+  // 自動スクロールの間隔（ミリ秒）
+  var interval = 3000;
+
+  // カルーセルの要素を取得
+  var carousel = document.getElementById('results-carousel');
+
+  // カルーセルのアイテムを取得
+  var items = carousel.getElementsByClassName('item');
+
+  // 現在のアイテムのインデックス
+  var currentIndex = 0;
+
+  // スクロール関数
+  function scrollCarousel() {
+    // 現在のアイテムを非表示にする
+    items[currentIndex].classList.remove('active');
+    // 次のアイテムのインデックスを更新
+    currentIndex = (currentIndex + 1) % items.length;
+    // 次のアイテムを表示する
+    items[currentIndex].classList.add('active');
+  }
+
+  // カルーセルを自動スクロールさせるタイマーを設定
+  setInterval(scrollCarousel, interval);
+</script>
+
+
+
+
+
 
   <br>
   <br>
@@ -337,9 +424,11 @@
               Second, these approaches are limited by task-specific pre-defined APIs, such as CLIP. Utilizing high-level APIs in a perception module implies a limitation in flexibility, as it suggests an inability to perform tasks beyond that scope.
               Third, LLM output actions are policy codes with high-level pre-defined APIs, that is task-level, and prevent flexible planning in various environments.
               We hypothesize that the natural language description of the whole planning process, instead of code, can contribute to removing the limitations.
+              
+            </div>
 
               <div>
-                <img src="static/images/problems.png" alt="drawing" width="900" />
+                <img src="static/images/problems.png" alt="drawing" width="600" />
               </div>
 
             </p>
@@ -413,14 +502,18 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Related works</h2>
+          <h2 class="title is-3">Difference from existing approaches</h2>
           <div class="content has-text-justified">
             <p>
-              
-              Key components of related code generation and reasoning approaches.
-              
+              <p>
+              Our appraoch does not output policy code, 
+              does not use pre-defined APIs for perception, 
+              and use only natural lanugage reasoning.
+              </p>
+            </div>
+
               <div>
-                <img src="static/images/related_works.png" alt="drawing" width="900" />
+                <img src="static/images/related_works.png" alt="drawing" width="500" />
               </div>
 
             </p>
